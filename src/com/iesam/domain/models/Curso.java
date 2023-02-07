@@ -1,4 +1,4 @@
-package src.com.iesam.domain.models;
+package com.iesam.domain.models;
 
 public class Curso {
 

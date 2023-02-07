@@ -1,7 +1,7 @@
-package src.com.iesam.presentation;
+package com.iesam.presentation;
 
-import src.com.iesam.domain.models.AulaOrdenadores;
-import src.com.iesam.domain.models.Curso;
+import com.iesam.domain.models.AulaOrdenadores;
+import com.iesam.domain.models.Curso;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +37,11 @@ public class Main {
         System.out.println(curso1.getDescripcion());
 
         System.out.println(curso1.getAulas().getId());
-        //De esta manera solo se podran imprimir los atributos de la clase Padre, para imprimir otros atributos, habra que añadir a Curso el tipo de aula del que se quieran imprimir los atributos.
+        //De esta manera solo se podran imprimir los atributos de la clase padre,
+        // para imprimir otros atributos, habra que añadir a Curso el tipo de aula d
+        // el que se quieran imprimir los atributos.
+
+        
 
     }
 }
