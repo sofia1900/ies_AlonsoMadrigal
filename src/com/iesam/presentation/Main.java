@@ -1,9 +1,6 @@
 package com.iesam.presentation;
 
-import com.iesam.domain.models.Alumno;
-import com.iesam.domain.models.Asignatura;
-import com.iesam.domain.models.AulaOrdenadores;
-import com.iesam.domain.models.Curso;
+import com.iesam.domain.models.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -75,6 +72,19 @@ public class Main {
         System.out.println(alumno1.getMadre());
         System.out.println(alumno1.getPadre());
         System.out.println(alumno1.getEmail());
+
+
+        //Matricula
+        Matricula matricula1 = new Matricula();
+        matricula1.setId("12575");
+        matricula1.setAlumno(alumno1);
+        matricula1.setCurso(curso1);
+
+        System.out.println("--- MATRICULA ---");
+        System.out.println(matricula1.getId());
+        System.out.println(matricula1.getAlumno().getNombre());
+        System.out.println(matricula1.getCurso().getNombre());
+
 
 
 
