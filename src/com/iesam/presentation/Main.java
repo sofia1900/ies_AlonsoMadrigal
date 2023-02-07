@@ -17,11 +17,14 @@ public class Main {
         se creara un solo método para cada instanciar cada clase. Pero, esto haría que se tuvieran que
         crear dataStore y casos de uso para poder utilizar los diferentes objetos creados.
         Ponemos un ejemplo con la clase Profesor que, como no tiene ningún tipo de composicion, no es
-        tan necesario crear su dataStores y casos de uso.
+        tan necesario crear su dataStore y casos de uso. El metodo queda comentado y la parte de main
+        sería así:
+            Main main = new Main(); //Ya que main es static y no puede coger atributos de la propia clase
+            main.crearProfesor();
          */
 
 
-
+        
         //Creando un aula
         AulaOrdenadores aulaOrdenadores1 = new AulaOrdenadores();
 
@@ -101,6 +104,7 @@ public class Main {
         System.out.println(matricula1.getAlumno().getNombre());
         System.out.println(matricula1.getCurso().getNombre());
 
+
         //Profesor
         Profesor profesor1 = new Profesor();
         profesor1.setId("75454");
@@ -123,7 +127,35 @@ public class Main {
         System.out.println(profesor1.getTituloAcademico());
         System.out.println(profesor1.getFechaAlta());
 
+
     }
+
+    /*
+    public void crearProfesor() throws ParseException {
+        Profesor profesor1 = new Profesor();
+        profesor1.setId("75454");
+        profesor1.setDni("11111111X");
+        profesor1.setNombre("Pepe");
+        profesor1.setApellidos("Perez Perez");
+        profesor1.setDireccion("Segovia");
+        profesor1.setTituloAcademico("Grado en Ingenieria Informatica");
+        String fechaComoTexto = "20/07/202";
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        Date fecha = sdf.parse(fechaComoTexto);
+        profesor1.setFechaAlta(fecha);
+
+        System.out.println("--- PROFESOR ---");
+        System.out.println(profesor1.getId());
+        System.out.println(profesor1.getNombre());
+        System.out.println(profesor1.getApellidos());
+        System.out.println(profesor1.getDni());
+        System.out.println(profesor1.getDireccion());
+        System.out.println(profesor1.getTituloAcademico());
+        System.out.println(profesor1.getFechaAlta());
+
+    }
+
+     */
 }
 
 
