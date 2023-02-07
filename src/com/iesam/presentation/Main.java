@@ -1,5 +1,6 @@
 package com.iesam.presentation;
 
+import com.iesam.domain.models.Alumno;
 import com.iesam.domain.models.Asignatura;
 import com.iesam.domain.models.AulaOrdenadores;
 import com.iesam.domain.models.Curso;
@@ -53,6 +54,28 @@ public class Main {
         System.out.println(asignatura1.getId());
         System.out.println(asignatura1.getNombre());
         System.out.println(asignatura1.getCurso().getNombre());
+
+        //Alumno
+        Alumno alumno1 = new Alumno();
+        alumno1.setId("10.179");
+        alumno1.setDni("00000000A");
+        alumno1.setNombre("Sofia");
+        alumno1.setApellidos("Jimenez Lapido");
+        alumno1.setDireccion("Avila");
+        alumno1.setMadre("Maria");
+        alumno1.setPadre("Sergio");
+        alumno1.setEmail("sofia@gmail.com");
+
+        System.out.println("--- ALUMNO ---");
+        System.out.println(alumno1.getId());
+        System.out.println(alumno1.getDni());
+        System.out.println(alumno1.getNombre());
+        System.out.println(alumno1.getApellidos());
+        System.out.println(alumno1.getDireccion());
+        System.out.println(alumno1.getMadre());
+        System.out.println(alumno1.getPadre());
+        System.out.println(alumno1.getEmail());
+
 
 
     }
