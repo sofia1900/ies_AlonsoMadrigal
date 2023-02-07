@@ -1,5 +1,6 @@
 package com.iesam.presentation;
 
+import com.iesam.domain.models.Asignatura;
 import com.iesam.domain.models.AulaOrdenadores;
 import com.iesam.domain.models.Curso;
 
@@ -41,7 +42,18 @@ public class Main {
         // para imprimir otros atributos, habra que añadir a Curso el tipo de aula d
         // el que se quieran imprimir los atributos.
 
-        
+
+        //asignatura
+        Asignatura asignatura1 = new Asignatura();
+        asignatura1.setId("1");
+        asignatura1.setNombre("Entorno de Desarrollo");
+        asignatura1.setCurso(curso1);
+
+        System.out.println("--- ASIGNATURA ---");
+        System.out.println(asignatura1.getId());
+        System.out.println(asignatura1.getNombre());
+        System.out.println(asignatura1.getCurso().getNombre());
+
 
     }
 }
