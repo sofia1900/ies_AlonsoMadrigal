@@ -2,8 +2,24 @@ package com.iesam.presentation;
 
 import com.iesam.domain.models.*;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+
+        /*
+        Todos los datos han sido ya introducidos, pero esto se puede mejorar haciendo que los
+        datos sean introducidos por teclado utilizando la clase Scanner.
+
+        Además, se podría mejorar mucho más si en vez de implementar todo en main (como es el caso),
+        se creara un solo método para cada instanciar cada clase. Pero, esto haría que se tuvieran que
+        crear dataStore y casos de uso para poder utilizar los diferentes objetos creados.
+        Ponemos un ejemplo con la clase Profesor que, como no tiene ningún tipo de composicion, no es
+        tan necesario crear su dataStores y casos de uso.
+         */
+
 
 
         //Creando un aula
@@ -85,8 +101,27 @@ public class Main {
         System.out.println(matricula1.getAlumno().getNombre());
         System.out.println(matricula1.getCurso().getNombre());
 
+        //Profesor
+        Profesor profesor1 = new Profesor();
+        profesor1.setId("75454");
+        profesor1.setDni("11111111X");
+        profesor1.setNombre("Pepe");
+        profesor1.setApellidos("Perez Perez");
+        profesor1.setDireccion("Segovia");
+        profesor1.setTituloAcademico("Grado en Ingenieria Informatica");
+        String fechaComoTexto = "20/07/202";
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        Date fecha = sdf.parse(fechaComoTexto);
+        profesor1.setFechaAlta(fecha);
 
-
+        System.out.println("--- PROFESOR ---");
+        System.out.println(profesor1.getId());
+        System.out.println(profesor1.getNombre());
+        System.out.println(profesor1.getApellidos());
+        System.out.println(profesor1.getDni());
+        System.out.println(profesor1.getDireccion());
+        System.out.println(profesor1.getTituloAcademico());
+        System.out.println(profesor1.getFechaAlta());
 
     }
 }
