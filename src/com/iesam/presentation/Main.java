@@ -43,7 +43,7 @@ public class Main {
         System.out.println(aulaOrdenadores1.getTipoOrdenadores());
 
 
-        //Creaando un curso
+        //Creando un curso
         Curso curso1 = new Curso();
 
         curso1.setId("DAM-2495");
