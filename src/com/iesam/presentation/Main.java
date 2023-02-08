@@ -58,11 +58,11 @@ public class Main {
 
         System.out.println(curso1.getAulas().getId());
         //De esta manera solo se podran imprimir los atributos de la clase padre,
-        // para imprimir otros atributos, habra que añadir a Curso el tipo de aula d
-        // el que se quieran imprimir los atributos.
+        // para imprimir otros atributos, habra que añadir a Curso el tipo de aula
+        // del que se quieran imprimir los atributos.
 
 
-        //asignatura
+        //Asignatura
         Asignatura asignatura1 = new Asignatura();
         asignatura1.setId("1");
         asignatura1.setNombre("Entorno de Desarrollo");
