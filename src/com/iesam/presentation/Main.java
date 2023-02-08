@@ -13,9 +13,11 @@ public class Main {
         Todos los datos han sido ya introducidos, pero esto se puede mejorar haciendo que los
         datos sean introducidos por teclado utilizando la clase Scanner.
 
-        Además, se podría mejorar mucho más si en vez de implementar todo en main (como es el caso),
-        se creara un solo método para cada instanciar cada clase. Pero, esto haría que se tuvieran que
-        crear dataStore y casos de uso para poder utilizar los diferentes objetos creados.
+        Además, se podría mejorar mucho más si en vez de instanciar todo en main (como es el caso),
+        se creara un solo método para cada instanciar cada clase. De esta manera se cumpliría
+        aún más con el primer principio SOLID (Single Responsability), ya que se crearía una función
+        para crear objetos de cada clase. Pero, esto haría que se tuvieran que crear dataStore y casos
+        de uso para poder utilizar en otros métodos los diferentes objetos creados.
         Ponemos un ejemplo con la clase Profesor que, como no tiene ningún tipo de composicion, no es
         tan necesario crear su dataStore y casos de uso. El metodo queda comentado y la parte de main
         sería así:
