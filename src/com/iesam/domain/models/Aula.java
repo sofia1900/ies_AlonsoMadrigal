@@ -2,9 +2,9 @@ package com.iesam.domain.models;
 
 public class Aula {
 
-    private String id;
-    private Integer planta;
-    private Integer capacidad;
+    protected String id;
+    protected Integer planta;
+    protected Integer capacidad;
 
 
     //getters y setters

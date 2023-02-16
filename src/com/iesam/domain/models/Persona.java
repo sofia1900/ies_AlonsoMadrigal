@@ -2,11 +2,11 @@ package com.iesam.domain.models;
 
 public class Persona {
 
-    private String id;
-    private String nombre;
-    private String apellidos;
-    private String dni;
-    private String direccion;
+    protected String id;
+    protected String nombre;
+    protected String apellidos;
+    protected String dni;
+    protected String direccion;
 
     public String getId() {
         return id;
